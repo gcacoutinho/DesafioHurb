@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        APIAcess.getHotels(pag: 1)
         // Do any additional setup after loading the view.
     }
 
