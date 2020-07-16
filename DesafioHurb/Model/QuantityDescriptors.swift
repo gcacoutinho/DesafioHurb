@@ -9,5 +9,5 @@
 import Foundation
 
 struct QuantityDescriptors: Codable {
-    let maxChildren, maxAdults, maxFreeChildrenAge: Int
+    let maxChildren, maxAdults, maxFreeChildrenAge: Int?
 }

@@ -10,6 +10,6 @@ import Foundation
 
 struct Meta: Codable {
     let count, offset, countWithAvailability, countWithAvailabilityInPage, countHotel,
-        countPackage, countTicket, countBustrip, countDisney: Int
-    let query, warning: String
+        countPackage, countTicket, countBustrip, countDisney: Int?
+    let query, warning: String?
 }

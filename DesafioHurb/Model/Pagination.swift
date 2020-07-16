@@ -9,7 +9,7 @@
 import Foundation
 
 struct Pagination: Codable {
-    let count: Int
-    let firstPage, nextPage, lastPage: String
+    let count: Int?
+    let firstPage, nextPage, lastPage: String?
     let previousPage: JSONNull?
 }

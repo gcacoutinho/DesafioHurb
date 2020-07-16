@@ -10,16 +10,16 @@ import Foundation
 
 struct Address: Codable {
     let zipcode, addressFullAddress, street, addressStreetName,
-        streetName, address, fullAddress: String
+        streetName, address, fullAddress: String?
     let neighborhood: String?
     let idAtlasNeighborhood, idNeighborhood, idAtlasCity,
         idAtlasCountry, idAtlasState: JSONNull?
-    let city: City
-    let idCity, idState, idCountry: Int
-    let state: State
-    let country: Country
-    let countryAlfa2, addressCountryAlfa2: CountryAlfa2
-    let geoLocation: GeoLocation
+    let city: String?
+    let idCity, idState, idCountry: Int?
+    let state: String?
+    let country: String?
+    let countryAlfa2, addressCountryAlfa2: String?
+    let geoLocation: GeoLocation?
 
     enum CodingKeys: String, CodingKey {
         case zipcode, street, streetName, address, fullAddress,

@@ -9,11 +9,9 @@
 import Foundation
 
 struct Tax: Codable {
-    let type: TypeEnum
-    let name: Name
-    let amount, amountOriginal: Double
-    let currency, currencyOriginal: Currency
-
+    let name, type, currency, currencyOriginal: String?
+    let amount, amountOriginal: Double?
+    
     enum CodingKeys: String, CodingKey {
         case type, name, amount
         case amountOriginal = "amount_original"

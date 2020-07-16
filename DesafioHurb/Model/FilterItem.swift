@@ -9,6 +9,6 @@
 import Foundation
 
 struct FilterItem: Codable {
-    let term, filter: String
-    let count: Int
+    let term, filter: String?
+    let count: Int?
 }

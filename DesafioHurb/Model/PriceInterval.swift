@@ -9,6 +9,6 @@
 import Foundation
 
 struct PriceInterval: Codable {
-    let min, max: Int
-    let filterPattern: String
+    let min, max: Int?
+    let filterPattern: String?
 }

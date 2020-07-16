@@ -9,12 +9,11 @@
 import Foundation
 
 struct ResultPrice: Codable {
-    let amount, oldPrice, currentPrice, totalPrice, originalAmountPerDay, amountPerDay: Double
-    let currency, currencyOriginal: Currency
-    let gain, feeExtraOriginal, gainOriginal, feeExtra: Int
-    let tariffPolicies: [JSONAny]
-    let sku: String
-    let taxes: [Tax]
+    let amount, currentPrice, totalPrice, amountPerDay, originalAmountPerDay, oldPrice: Double?
+    let currency, currencyOriginal, sku: String?
+    let feeExtraOriginal, gainOriginal, feeExtra, gain: Int?
+    let tariffPolicies: [JSONAny]?
+    let taxes: [Tax]?
 
     enum CodingKeys: String, CodingKey {
         case amount, currency, gain, sku, taxes, originalAmountPerDay, amountPerDay

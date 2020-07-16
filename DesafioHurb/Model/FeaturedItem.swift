@@ -9,8 +9,8 @@
 import Foundation
 
 struct FeaturedItem: Codable {
-    let amenities: [String]
-    let name, image, featuredItemDescription: String
+    let amenities: [String]?
+    let name, image, featuredItemDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case amenities, name, image

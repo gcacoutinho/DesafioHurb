@@ -9,6 +9,6 @@
 import Foundation
 
 struct PriceElement: Codable {
-    let min, maxExclusive, count: Int
-    let filter: String
+    let min, maxExclusive, count: Int?
+    let filter: String?
 }

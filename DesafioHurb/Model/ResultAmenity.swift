@@ -9,6 +9,6 @@
 import Foundation
 
 struct ResultAmenity: Codable {
-    let name: String
-    let category: AmenityCategory
+    let name: String?
+    let category: String?
 }

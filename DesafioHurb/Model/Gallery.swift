@@ -9,8 +9,8 @@
 import Foundation
 
 struct Gallery: Codable {
-    let galleryDescription: Description
-    let url: String
+    let galleryDescription: String?
+    let url: String?
     let roomID: JSONNull?
 
     enum CodingKeys: String, CodingKey {
