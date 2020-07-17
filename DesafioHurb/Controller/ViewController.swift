@@ -15,9 +15,20 @@ class ViewController: UIViewController {
     var results: [Result]? {
         didSet {
             if isViewLoaded {
-                tableView.reloadData()
+                self.tableView.reloadData()
             }
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+//        APIAcess.getHotels(pag: 1) { (result, error) in
+//            self.results = result?.results
+//        }
     }
 }
 
