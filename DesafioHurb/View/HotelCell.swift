@@ -13,12 +13,14 @@ class HotelCell: UITableViewCell {
   static let identifier = "HotelCell"
   
   @IBOutlet weak var tituloLabel: UILabel!
-  @IBOutlet weak var descricaoLabel: UILabel!
+  @IBOutlet weak var localizacao: UILabel!
+  @IBOutlet weak var preco: UILabel!
 
   override func prepareForReuse() {
     super.prepareForReuse()
     
-    tituloLabel.text = nil
-    descricaoLabel.text = nil
+    self.tituloLabel.text = nil
+    self.localizacao.text = nil
+    self.preco.text = nil
   }
 }

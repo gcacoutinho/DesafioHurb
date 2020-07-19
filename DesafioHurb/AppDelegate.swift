@@ -13,11 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as? ViewController
-        APIAcess.getHotels(pag: 1) { (result, error) in
-            controller?.results = result?.results
-        }
+//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as? ViewController
+//        APIAcess.getHotels(pag: 1) { (result, error) in
+//            controller?.tableData = result
+//        }
 
         return true
     }

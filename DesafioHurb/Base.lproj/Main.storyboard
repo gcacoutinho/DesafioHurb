@@ -26,35 +26,46 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9i-zW-Nfi" userLabel="Titulo">
-                                                    <rect key="frame" x="5" y="5" width="404" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9i-zW-Nfi" userLabel="Titulo">
+                                                    <rect key="frame" x="10" y="5" width="322" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-ee-Ijl" userLabel="Descrição">
-                                                    <rect key="frame" x="5" y="26" width="404" height="61"/>
-                                                    <string key="text">Et quis voluptate repudiandae saepe quis. Quos reprehenderit rem quis autem. Officia repellendus laborum est aliquid unde nobis sed. Debitis consequatur eius iusto ab illum itaque. Repellendus sapiente animi qui eum qui eveniet esse accusantium</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 9999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mO-dD-vqA" userLabel="Preço">
+                                                    <rect key="frame" x="332" y="4" width="72" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade, Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-bn-5EB" userLabel="Localização">
+                                                    <rect key="frame" x="10" y="25" width="394" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="V9i-zW-Nfi" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="5" id="4q8-Ba-j8T"/>
-                                                <constraint firstAttribute="trailing" secondItem="aqO-ee-Ijl" secondAttribute="trailing" constant="5" id="8ku-Fg-fyS"/>
-                                                <constraint firstItem="aqO-ee-Ijl" firstAttribute="top" secondItem="V9i-zW-Nfi" secondAttribute="bottom" id="M5L-fV-rxU"/>
-                                                <constraint firstAttribute="trailing" secondItem="V9i-zW-Nfi" secondAttribute="trailing" constant="5" id="TOT-Bv-JeP"/>
-                                                <constraint firstItem="aqO-ee-Ijl" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="5" id="eLT-Oe-lAb"/>
+                                                <constraint firstAttribute="trailing" secondItem="6mO-dD-vqA" secondAttribute="trailing" constant="10" id="1CR-fI-bsw"/>
+                                                <constraint firstItem="V9i-zW-Nfi" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="10" id="4q8-Ba-j8T"/>
+                                                <constraint firstAttribute="trailing" secondItem="0I1-bn-5EB" secondAttribute="trailing" constant="10" id="Io6-od-23E"/>
+                                                <constraint firstItem="0I1-bn-5EB" firstAttribute="top" secondItem="V9i-zW-Nfi" secondAttribute="bottom" id="RpN-e6-Y05"/>
+                                                <constraint firstItem="6mO-dD-vqA" firstAttribute="leading" secondItem="V9i-zW-Nfi" secondAttribute="trailing" id="dmT-ba-YZz"/>
+                                                <constraint firstItem="0I1-bn-5EB" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="10" id="mcb-WB-XAg"/>
+                                                <constraint firstItem="6mO-dD-vqA" firstAttribute="firstBaseline" secondItem="V9i-zW-Nfi" secondAttribute="firstBaseline" id="prK-ox-52v"/>
                                                 <constraint firstItem="V9i-zW-Nfi" firstAttribute="top" secondItem="pXQ-s4-ood" secondAttribute="top" constant="5" id="qJS-Bv-XGS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descricaoLabel" destination="aqO-ee-Ijl" id="r1g-9L-OPZ"/>
+                                            <outlet property="localizacao" destination="0I1-bn-5EB" id="ApK-G8-MjM"/>
+                                            <outlet property="preco" destination="6mO-dD-vqA" id="P7k-Ur-SNC"/>
                                             <outlet property="tituloLabel" destination="V9i-zW-Nfi" id="Hsi-Ts-AT9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -72,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="125"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
         </scene>
     </scenes>
 </document>

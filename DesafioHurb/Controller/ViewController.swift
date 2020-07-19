@@ -12,23 +12,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var results: [Result]? {
+    var tableData: Response? {
         didSet {
-            if isViewLoaded {
-                self.tableView.reloadData()
-            }
+            self.tableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.delegate = self
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 400
         self.tableView.dataSource = self
-        
-//        APIAcess.getHotels(pag: 1) { (result, error) in
-//            self.results = result?.results
-//        }
+        APIAcess.getHotels(pag: 1) { (result, error) in
+            self.tableData = result
+        }
     }
 }
 
@@ -36,16 +33,18 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let hotelCell = tableView.dequeueReusableCell(withIdentifier: HotelCell.identifier, for: indexPath) as! HotelCell
     
-    if let hotel = results?[indexPath.row] {
+    if let hotel = tableData?.results?[indexPath.row] {
         hotelCell.tituloLabel?.text = hotel.name
-        hotelCell.descricaoLabel?.text = hotel.resultDescription
+        hotelCell.preco?.text = "\(hotel.price?.currency ?? "R$") \(String(hotel.price?.currentPrice ?? 0))"
+        let cidade = hotel.address?.city
+        hotelCell.localizacao?.text = "\(cidade ?? "")\(cidade != nil ? ", " : "")\(hotel.address?.state ?? "")"
     }
     
     return hotelCell
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return results?.count ?? 0
+    return tableData?.results?.count ?? 0
   }
 }
 

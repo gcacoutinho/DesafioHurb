@@ -37,6 +37,7 @@
 		49B0A9AC24B92BF000884E95 /* QuantityDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A9AB24B92BF000884E95 /* QuantityDescriptors.swift */; };
 		49B0A9BB24B9329700884E95 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49B0A9BA24B9329700884E95 /* Alamofire */; };
 		49CFC78D24C0E9DB00908D48 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFC78C24C0E9DB00908D48 /* HotelCell.swift */; };
+		49F28B4B24C4949200FEC39A /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 49F28B4A24C4949200FEC39A /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F28B4B24C4949200FEC39A /* SkeletonView in Frameworks */,
 				49B0A9BB24B9329700884E95 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +190,7 @@
 			name = DesafioHurb;
 			packageProductDependencies = (
 				49B0A9BA24B9329700884E95 /* Alamofire */,
+				49F28B4A24C4949200FEC39A /* SkeletonView */,
 			);
 			productName = DesafioHurb;
 			productReference = 49B0A95B24B9229B00884E95 /* DesafioHurb.app */;
@@ -219,6 +222,7 @@
 			mainGroup = 49B0A95224B9229A00884E95;
 			packageReferences = (
 				49B0A9B924B9329700884E95 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				49F28B4924C4949200FEC39A /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 49B0A95C24B9229B00884E95 /* Products */;
 			projectDirPath = "";
@@ -480,6 +484,14 @@
 				minimumVersion = 5.2.1;
 			};
 		};
+		49F28B4924C4949200FEC39A /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -487,6 +499,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 49B0A9B924B9329700884E95 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		49F28B4A24C4949200FEC39A /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49F28B4924C4949200FEC39A /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
