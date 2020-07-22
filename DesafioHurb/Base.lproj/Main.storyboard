@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPB-46-Mi7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,6 +7,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ffw-VS-fYv">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="dPB-46-Mi7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bBz-3f-9b5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ocg-qY-GMD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gyd-7n-vw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="125"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -15,6 +30,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gNQ-6g-g9W">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S0J-AS-YfU">
                                 <rect key="frame" x="0.0" y="54" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -31,18 +50,27 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 9999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mO-dD-vqA" userLabel="Preço">
                                                     <rect key="frame" x="332" y="4" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade, Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-bn-5EB" userLabel="Localização">
                                                     <rect key="frame" x="10" y="25" width="394" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -55,11 +83,18 @@
                                                 <constraint firstItem="6mO-dD-vqA" firstAttribute="firstBaseline" secondItem="V9i-zW-Nfi" secondAttribute="firstBaseline" id="prK-ox-52v"/>
                                                 <constraint firstItem="V9i-zW-Nfi" firstAttribute="top" secondItem="pXQ-s4-ood" secondAttribute="top" constant="5" id="qJS-Bv-XGS"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="localizacao" destination="0I1-bn-5EB" id="ApK-G8-MjM"/>
                                             <outlet property="preco" destination="6mO-dD-vqA" id="P7k-Ur-SNC"/>
                                             <outlet property="tituloLabel" destination="V9i-zW-Nfi" id="Hsi-Ts-AT9"/>
+                                            <segue destination="2rG-ZL-EXx" kind="showDetail" identifier="HotelDetalhes" id="6yW-kq-tg9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -77,6 +112,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tOT-Ln-9WC"/>
                     <connections>
                         <outlet property="tableView" destination="S0J-AS-YfU" id="iUi-jd-xdg"/>
                     </connections>
@@ -84,6 +120,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+        <!--Hotel Detalhes View Controller-->
+        <scene sceneID="iP1-g1-hca">
+            <objects>
+                <viewController id="2rG-ZL-EXx" customClass="HotelDetalhesViewController" customModule="DesafioHurb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6YN-GT-R78">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Hotel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdS-od-IFQ">
+                                <rect key="frame" x="10" y="5" width="394" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-YW-Qyk">
+                                <rect key="frame" x="20" y="44" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fna-cO-3nu">
+                                <rect key="frame" x="0.0" y="601" width="414" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fna-cO-3nu" secondAttribute="height" multiplier="2:1" id="Y4u-Uo-bFD"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YdS-od-IFQ" firstAttribute="top" secondItem="6uP-XA-KbU" secondAttribute="top" constant="5" id="3jg-RC-SXG"/>
+                            <constraint firstItem="6uP-XA-KbU" firstAttribute="bottom" secondItem="Fna-cO-3nu" secondAttribute="bottom" id="9hJ-P0-AVe"/>
+                            <constraint firstItem="Fna-cO-3nu" firstAttribute="leading" secondItem="6uP-XA-KbU" secondAttribute="leading" id="BVW-kT-k1N"/>
+                            <constraint firstItem="hd1-YW-Qyk" firstAttribute="top" secondItem="YdS-od-IFQ" secondAttribute="bottom" constant="10" id="CUb-lr-cO4"/>
+                            <constraint firstItem="YdS-od-IFQ" firstAttribute="leading" secondItem="6uP-XA-KbU" secondAttribute="leading" constant="10" id="L3d-1W-fC2"/>
+                            <constraint firstItem="hd1-YW-Qyk" firstAttribute="leading" secondItem="6uP-XA-KbU" secondAttribute="leading" constant="20" id="TVM-Y1-NDI"/>
+                            <constraint firstItem="6uP-XA-KbU" firstAttribute="trailing" secondItem="Fna-cO-3nu" secondAttribute="trailing" id="XMX-Wf-PT6"/>
+                            <constraint firstItem="6uP-XA-KbU" firstAttribute="trailing" secondItem="YdS-od-IFQ" secondAttribute="trailing" constant="10" id="g89-L5-tOp"/>
+                            <constraint firstItem="6uP-XA-KbU" firstAttribute="trailing" secondItem="hd1-YW-Qyk" secondAttribute="trailing" constant="20" id="oIs-rn-P0C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6uP-XA-KbU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u8C-uD-Udg"/>
+                    <connections>
+                        <outlet property="descricao" destination="hd1-YW-Qyk" id="Btw-Wd-LS3"/>
+                        <outlet property="mapa" destination="Fna-cO-3nu" id="Wci-Nq-thr"/>
+                        <outlet property="nome" destination="YdS-od-IFQ" id="22S-UC-CMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWf-md-wwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="125"/>
         </scene>
     </scenes>
 </document>
