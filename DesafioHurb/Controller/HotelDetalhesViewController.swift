@@ -39,15 +39,14 @@ class HotelDetalhesViewController: UIViewController {
         self.latitude = hotel?.latitude
         self.longitude = hotel?.longitude
         
-        debugPrint(latitude)
-        debugPrint(longitude)
-        
         if latitude != nil && longitude != nil {
             let coordenadas = CLLocation(latitude: latitude!, longitude: longitude!)
             mapa.centralizarLocalizacao(coordenadas)
             let anotacao = MKPointAnnotation()
             anotacao.coordinate = coordenadas.coordinate
             mapa.addAnnotation(anotacao)
+        } else {
+            mapa.isHidden = true
         }
     }
 }
