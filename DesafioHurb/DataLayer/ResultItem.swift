@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Result: Codable {
+struct ResultItem: Codable {
     let sku, id, smallDescription, image, name, url, resultDescription: String?
     let isHotel: Bool?
     let category: String?

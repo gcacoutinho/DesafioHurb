@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493C129824C684F1006EDC83 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C129724C684F1006EDC83 /* Hotel.swift */; };
+		4983BA8524C7C23E004AA32C /* ImagemGaleria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983BA8424C7C23E004AA32C /* ImagemGaleria.swift */; };
+		49883A9D24C7B59F00C5A584 /* HotelDetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49883A9C24C7B59F00C5A584 /* HotelDetalhesViewController.swift */; };
 		499883FE24BD18830087F4C5 /* APIAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499883FD24BD18830087F4C5 /* APIAccess.swift */; };
 		49B0A95F24B9229B00884E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A95E24B9229B00884E95 /* AppDelegate.swift */; };
 		49B0A96124B9229B00884E95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A96024B9229B00884E95 /* SceneDelegate.swift */; };
@@ -15,7 +18,7 @@
 		49B0A96824B922A200884E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B0A96724B922A200884E95 /* Assets.xcassets */; };
 		49B0A96B24B922A200884E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B0A96924B922A200884E95 /* LaunchScreen.storyboard */; };
 		49B0A97724B9237600884E95 /* pull-request.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49B0A97624B9237600884E95 /* pull-request.txt */; };
-		49B0A97924B9240700884E95 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A97824B9240700884E95 /* Result.swift */; };
+		49B0A97924B9240700884E95 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A97824B9240700884E95 /* ResultItem.swift */; };
 		49B0A97F24B9281F00884E95 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A97E24B9281F00884E95 /* Response.swift */; };
 		49B0A98124B9283F00884E95 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A98024B9283F00884E95 /* Filters.swift */; };
 		49B0A98324B9290400884E95 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A98224B9290400884E95 /* FilterItem.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493C129724C684F1006EDC83 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		4983BA8424C7C23E004AA32C /* ImagemGaleria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemGaleria.swift; sourceTree = "<group>"; };
+		49883A9C24C7B59F00C5A584 /* HotelDetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetalhesViewController.swift; sourceTree = "<group>"; };
 		499883FD24BD18830087F4C5 /* APIAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAccess.swift; sourceTree = "<group>"; };
 		49B0A95B24B9229B00884E95 /* DesafioHurb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHurb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B0A95E24B9229B00884E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +57,7 @@
 		49B0A96A24B922A200884E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49B0A96C24B922A200884E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B0A97624B9237600884E95 /* pull-request.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pull-request.txt"; sourceTree = "<group>"; };
-		49B0A97824B9240700884E95 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		49B0A97824B9240700884E95 /* ResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		49B0A97E24B9281F00884E95 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		49B0A98024B9283F00884E95 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		49B0A98224B9290400884E95 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
@@ -87,44 +93,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49B0A95224B9229A00884E95 = {
-			isa = PBXGroup;
-			children = (
-				49B0A97624B9237600884E95 /* pull-request.txt */,
-				49B0A95D24B9229B00884E95 /* DesafioHurb */,
-				49B0A95C24B9229B00884E95 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		49B0A95C24B9229B00884E95 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				49B0A95B24B9229B00884E95 /* DesafioHurb.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		49B0A95D24B9229B00884E95 /* DesafioHurb */ = {
-			isa = PBXGroup;
-			children = (
-				49B0A97424B9233000884E95 /* Controller */,
-				49B0A97324B9232400884E95 /* View */,
-				49B0A97224B9231700884E95 /* Model */,
-				49B0A95E24B9229B00884E95 /* AppDelegate.swift */,
-				49B0A96024B9229B00884E95 /* SceneDelegate.swift */,
-				49B0A96424B9229B00884E95 /* Main.storyboard */,
-				49B0A96724B922A200884E95 /* Assets.xcassets */,
-				49B0A96924B922A200884E95 /* LaunchScreen.storyboard */,
-				49B0A96C24B922A200884E95 /* Info.plist */,
-			);
-			path = DesafioHurb;
-			sourceTree = "<group>";
-		};
-		49B0A97224B9231700884E95 /* Model */ = {
+		493C129624C684B2006EDC83 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
 				49BAE40024C0E05500496150 /* Network */,
-				49B0A97824B9240700884E95 /* Result.swift */,
+				49B0A97824B9240700884E95 /* ResultItem.swift */,
 				49B0A97E24B9281F00884E95 /* Response.swift */,
 				49B0A98024B9283F00884E95 /* Filters.swift */,
 				49B0A98224B9290400884E95 /* FilterItem.swift */,
@@ -145,6 +118,49 @@
 				49B0A9A924B92BDD00884E95 /* ResultAmenity.swift */,
 				49B0A9AB24B92BF000884E95 /* QuantityDescriptors.swift */,
 			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		49B0A95224B9229A00884E95 = {
+			isa = PBXGroup;
+			children = (
+				49B0A97624B9237600884E95 /* pull-request.txt */,
+				49B0A95D24B9229B00884E95 /* DesafioHurb */,
+				49B0A95C24B9229B00884E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49B0A95C24B9229B00884E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B0A95B24B9229B00884E95 /* DesafioHurb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B0A95D24B9229B00884E95 /* DesafioHurb */ = {
+			isa = PBXGroup;
+			children = (
+				493C129624C684B2006EDC83 /* DataLayer */,
+				49B0A97424B9233000884E95 /* Controller */,
+				49B0A97324B9232400884E95 /* View */,
+				49B0A97224B9231700884E95 /* Model */,
+				49B0A95E24B9229B00884E95 /* AppDelegate.swift */,
+				49B0A96024B9229B00884E95 /* SceneDelegate.swift */,
+				49B0A96424B9229B00884E95 /* Main.storyboard */,
+				49B0A96724B922A200884E95 /* Assets.xcassets */,
+				49B0A96924B922A200884E95 /* LaunchScreen.storyboard */,
+				49B0A96C24B922A200884E95 /* Info.plist */,
+			);
+			path = DesafioHurb;
+			sourceTree = "<group>";
+		};
+		49B0A97224B9231700884E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				493C129724C684F1006EDC83 /* Hotel.swift */,
+				4983BA8424C7C23E004AA32C /* ImagemGaleria.swift */,
+			);
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -160,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				49B0A96224B9229B00884E95 /* ViewController.swift */,
+				49883A9C24C7B59F00C5A584 /* HotelDetalhesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,13 +281,16 @@
 				49B0A9AA24B92BDD00884E95 /* ResultAmenity.swift in Sources */,
 				49B0A96324B9229B00884E95 /* ViewController.swift in Sources */,
 				49B0A99624B92AD400884E95 /* JSONAny.swift in Sources */,
+				493C129824C684F1006EDC83 /* Hotel.swift in Sources */,
 				49B0A99224B92A1D00884E95 /* AmenityCategory.swift in Sources */,
 				49B0A98924B9295500884E95 /* Meta.swift in Sources */,
 				49B0A95F24B9229B00884E95 /* AppDelegate.swift in Sources */,
 				49B0A99824B92AEA00884E95 /* Gallery.swift in Sources */,
+				49883A9D24C7B59F00C5A584 /* HotelDetalhesViewController.swift in Sources */,
 				49B0A9AC24B92BF000884E95 /* QuantityDescriptors.swift in Sources */,
+				4983BA8524C7C23E004AA32C /* ImagemGaleria.swift in Sources */,
 				49B0A99A24B92B1500884E95 /* Tax.swift in Sources */,
-				49B0A97924B9240700884E95 /* Result.swift in Sources */,
+				49B0A97924B9240700884E95 /* ResultItem.swift in Sources */,
 				49B0A96124B9229B00884E95 /* SceneDelegate.swift in Sources */,
 				49B0A9A624B92B9A00884E95 /* FeaturedItem.swift in Sources */,
 				49B0A97F24B9281F00884E95 /* Response.swift in Sources */,
