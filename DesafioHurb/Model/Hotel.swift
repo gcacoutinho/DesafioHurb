@@ -17,20 +17,29 @@ class Hotel {
     let moeda: String
     let latitude: Double?
     let longitude: Double?
+    let estrelas: Int?
     let galeria: [ImagemGaleria]
+    let amenidades: [Amenidade]
     
     init (hotel: ResultItem) {
         self.nome = hotel.name ?? ""
-        self.descricao = "\(hotel.resultDescription ?? "") \n\n\n\n \(hotel.smallDescription ?? "")"
+        self.descricao = "\(hotel.smallDescription ?? "")" //"\(hotel.resultDescription ?? "")"
         self.estado = hotel.address?.state ?? ""
         self.cidade = hotel.address?.city ?? ""
         self.preco = hotel.price?.currentPrice ?? 0.0
         self.moeda = hotel.price?.currency ?? ""
+        self.latitude = hotel.address?.geoLocation?.lat
+        self.longitude = hotel.address?.geoLocation?.lon
+        self.estrelas = hotel.stars
         self.galeria = hotel.gallery?.map({ gallery in
             ImagemGaleria(url: gallery.url, descricao: gallery.galleryDescription)
         }) ?? []
-        self.latitude = hotel.address?.geoLocation?.lat
-        self.longitude = hotel.address?.geoLocation?.lon
+        self.amenidades = hotel.amenities?.compactMap({ amenidade in
+            if let categoria = amenidade.category, let nome = amenidade.name {
+                return Amenidade(categoria: categoria, nome: nome)
+            }
+            return nil
+        }) ?? []
     }
     
     func getLocalizacao() -> String {

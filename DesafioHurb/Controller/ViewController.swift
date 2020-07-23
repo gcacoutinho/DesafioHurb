@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 400
+        self.tableView.estimatedRowHeight = 160
         self.tableView.dataSource = self
         
         self.tableView.showSkeleton()
@@ -70,6 +70,8 @@ extension ViewController: UITableViewDataSource {
     hotelCell.tituloLabel?.text = hotel.nome
     hotelCell.preco?.text = "\(hotel.moeda) \(hotel.preco)"
     hotelCell.localizacao?.text = hotel.getLocalizacao()
+    
+    hotelCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
 
     return hotelCell
   }
@@ -84,5 +86,3 @@ extension ViewController: UITableViewDelegate {
     tableView.deselectRow(at: indexPath, animated: true)
   }
 }
-
-

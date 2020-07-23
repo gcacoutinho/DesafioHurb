@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPB-46-Mi7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPB-46-Mi7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,16 +39,16 @@
                             </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S0J-AS-YfU">
                                 <rect key="frame" x="0.0" y="54" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelCell" id="DWn-tK-ikZ" customClass="HotelCell" customModule="DesafioHurb" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DWn-tK-ikZ" id="pXQ-s4-ood">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9i-zW-Nfi" userLabel="Titulo">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9i-zW-Nfi" userLabel="Titulo">
                                                     <rect key="frame" x="10" y="5" width="322" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -64,24 +67,75 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade, Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-bn-5EB" userLabel="Localização">
-                                                    <rect key="frame" x="10" y="25" width="394" height="16"/>
+                                                    <rect key="frame" x="10" y="25" width="394" height="16.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mlg-BW-uw9">
+                                                    <rect key="frame" x="0.0" y="56.5" width="414" height="103.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mlg-BW-uw9" secondAttribute="height" multiplier="4:1" id="5YW-eN-vZ0"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ANw-xw-jMS">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemGaleria" id="3kF-dL-aJH" customClass="ImagemGaleriaCell" customModule="DesafioHurb" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-12.5" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ADY-yw-2VY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="30o-L3-INA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="128" id="9FK-5s-I8t"/>
+                                                                            <constraint firstAttribute="width" secondItem="30o-L3-INA" secondAttribute="height" multiplier="1.5" id="n3l-fr-x3s"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="30o-L3-INA" firstAttribute="leading" secondItem="ADY-yw-2VY" secondAttribute="leading" id="2Ak-3B-Xbq"/>
+                                                                    <constraint firstItem="30o-L3-INA" firstAttribute="top" secondItem="ADY-yw-2VY" secondAttribute="top" id="BGw-0n-yV2"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="30o-L3-INA" secondAttribute="trailing" id="bqU-13-Hjh"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="30o-L3-INA" secondAttribute="bottom" id="koa-fM-YzU"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="imagem" destination="30o-L3-INA" id="XQH-eF-aTm"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="6mO-dD-vqA" secondAttribute="trailing" constant="10" id="1CR-fI-bsw"/>
+                                                <constraint firstItem="mlg-BW-uw9" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" id="2gZ-v7-Ami"/>
                                                 <constraint firstItem="V9i-zW-Nfi" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="10" id="4q8-Ba-j8T"/>
+                                                <constraint firstItem="mlg-BW-uw9" firstAttribute="top" secondItem="0I1-bn-5EB" secondAttribute="bottom" constant="15" id="AO8-Mm-M37"/>
                                                 <constraint firstAttribute="trailing" secondItem="0I1-bn-5EB" secondAttribute="trailing" constant="10" id="Io6-od-23E"/>
                                                 <constraint firstItem="0I1-bn-5EB" firstAttribute="top" secondItem="V9i-zW-Nfi" secondAttribute="bottom" id="RpN-e6-Y05"/>
                                                 <constraint firstItem="6mO-dD-vqA" firstAttribute="leading" secondItem="V9i-zW-Nfi" secondAttribute="trailing" id="dmT-ba-YZz"/>
                                                 <constraint firstItem="0I1-bn-5EB" firstAttribute="leading" secondItem="pXQ-s4-ood" secondAttribute="leading" constant="10" id="mcb-WB-XAg"/>
+                                                <constraint firstAttribute="bottom" secondItem="mlg-BW-uw9" secondAttribute="bottom" constant="15" id="ozi-wQ-5Um"/>
                                                 <constraint firstItem="6mO-dD-vqA" firstAttribute="firstBaseline" secondItem="V9i-zW-Nfi" secondAttribute="firstBaseline" id="prK-ox-52v"/>
                                                 <constraint firstItem="V9i-zW-Nfi" firstAttribute="top" secondItem="pXQ-s4-ood" secondAttribute="top" constant="5" id="qJS-Bv-XGS"/>
+                                                <constraint firstAttribute="trailing" secondItem="mlg-BW-uw9" secondAttribute="trailing" id="yyB-Ke-0V7"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -91,6 +145,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <outlet property="galeria" destination="mlg-BW-uw9" id="Ydy-hW-IYG"/>
                                             <outlet property="localizacao" destination="0I1-bn-5EB" id="ApK-G8-MjM"/>
                                             <outlet property="preco" destination="6mO-dD-vqA" id="P7k-Ur-SNC"/>
                                             <outlet property="tituloLabel" destination="V9i-zW-Nfi" id="Hsi-Ts-AT9"/>
@@ -103,14 +158,14 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S0J-AS-YfU" secondAttribute="trailing" id="6tz-YW-hFS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S0J-AS-YfU" secondAttribute="bottom" id="L1I-oY-kwe"/>
                             <constraint firstItem="S0J-AS-YfU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VIO-Q1-zds"/>
                             <constraint firstItem="S0J-AS-YfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rrC-4Q-HT4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="tOT-Ln-9WC"/>
                     <connections>
@@ -148,7 +203,8 @@
                                 </constraints>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6uP-XA-KbU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YdS-od-IFQ" firstAttribute="top" secondItem="6uP-XA-KbU" secondAttribute="top" constant="5" id="3jg-RC-SXG"/>
                             <constraint firstItem="6uP-XA-KbU" firstAttribute="bottom" secondItem="Fna-cO-3nu" secondAttribute="bottom" id="9hJ-P0-AVe"/>
@@ -160,7 +216,6 @@
                             <constraint firstItem="6uP-XA-KbU" firstAttribute="trailing" secondItem="YdS-od-IFQ" secondAttribute="trailing" constant="10" id="g89-L5-tOp"/>
                             <constraint firstItem="6uP-XA-KbU" firstAttribute="trailing" secondItem="hd1-YW-Qyk" secondAttribute="trailing" constant="20" id="oIs-rn-P0C"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6uP-XA-KbU"/>
                     </view>
                     <navigationItem key="navigationItem" id="u8C-uD-Udg"/>
                     <connections>
@@ -174,4 +229,12 @@
             <point key="canvasLocation" x="988" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
