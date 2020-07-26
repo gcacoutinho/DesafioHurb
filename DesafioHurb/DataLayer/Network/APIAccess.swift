@@ -29,7 +29,7 @@ class HurbAPIAccess {
     }
     
     func getHoteis(completionHandler: @escaping (Result<[Hotel], Error>) -> Void) {
-        let url = "https://www.hurb.com/search/api?q=buzios&page=\(paginaAtual)"
+        let url = "https://www.hurb.com/search/api?q=buzios&page=\(paginaAtual)&sort=stars"
         session.request(url).responseDecodable(of: Response.self) { response in
             do {
                 let response = try response.result.get()
