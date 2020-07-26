@@ -40,7 +40,7 @@ class ViewController: UIViewController {
                 self.tableView.hideSkeleton()
                 self.tabelaDados = hotel
             case let .failure(error):
-                let mensagemErro = error.asAFError?.errorDescription ?? "Aconteceu algo de errado 🤔"
+                let mensagemErro = error.asAFError(orFailWith: "Aconteceu algo de errado 🤔").errorDescription
                 let alert = UIAlertController(title: "Erro", message: mensagemErro, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: "Ação padrão"), style: .default))
                 self.present(alert, animated: true)

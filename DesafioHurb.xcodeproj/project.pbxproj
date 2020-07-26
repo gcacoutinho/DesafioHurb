@@ -43,6 +43,7 @@
 		49B0A9AC24B92BF000884E95 /* QuantityDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A9AB24B92BF000884E95 /* QuantityDescriptors.swift */; };
 		49B0A9BB24B9329700884E95 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49B0A9BA24B9329700884E95 /* Alamofire */; };
 		49CFC78D24C0E9DB00908D48 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFC78C24C0E9DB00908D48 /* HotelCell.swift */; };
+		49F0483424CD56FB0052BFB1 /* AlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0483324CD56FB0052BFB1 /* AlamofireLogger.swift */; };
 		49F28B4B24C4949200FEC39A /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 49F28B4A24C4949200FEC39A /* SkeletonView */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		49B0A9A924B92BDD00884E95 /* ResultAmenity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAmenity.swift; sourceTree = "<group>"; };
 		49B0A9AB24B92BF000884E95 /* QuantityDescriptors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityDescriptors.swift; sourceTree = "<group>"; };
 		49CFC78C24C0E9DB00908D48 /* HotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCell.swift; sourceTree = "<group>"; };
+		49F0483324CD56FB0052BFB1 /* AlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				499883FD24BD18830087F4C5 /* APIAccess.swift */,
+				49F0483324CD56FB0052BFB1 /* AlamofireLogger.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				496E846B24C8C035003599C1 /* ViewController+UICollectionView.swift in Sources */,
 				49B0A98124B9283F00884E95 /* Filters.swift in Sources */,
 				49B0A99C24B92B2700884E95 /* JSONNull.swift in Sources */,
+				49F0483424CD56FB0052BFB1 /* AlamofireLogger.swift in Sources */,
 				49B0A98E24B929B100884E95 /* Address.swift in Sources */,
 				49B0A98724B9294600884E95 /* PriceElement.swift in Sources */,
 				49B0A9AA24B92BDD00884E95 /* ResultAmenity.swift in Sources */,
