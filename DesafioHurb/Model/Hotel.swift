@@ -26,8 +26,8 @@ class Hotel {
         self.descricao = "\(hotel.smallDescription ?? "")" //"\(hotel.resultDescription ?? "")"
         self.estado = hotel.address?.state ?? ""
         self.cidade = hotel.address?.city ?? ""
-        self.preco = hotel.price?.currentPrice ?? 0.0
-        self.moeda = hotel.price?.currency ?? ""
+        self.preco = hotel.price?.currentPrice ?? hotel.price?.amount ?? hotel.price?.totalPrice ?? 0.0
+        self.moeda = hotel.price?.currency ?? hotel.price?.currencyOriginal ?? ""
         self.latitude = hotel.address?.geoLocation?.lat
         self.longitude = hotel.address?.geoLocation?.lon
         self.estrelas = hotel.stars
@@ -44,5 +44,11 @@ class Hotel {
     
     func getLocalizacao() -> String {
         return "\(cidade), \(estado)"
+    }
+    
+    func getPrecoTexto() -> String {
+        let locale = NSLocale(localeIdentifier: self.moeda)
+        let simbolo = locale.displayName(forKey: .currencySymbol, value: self.moeda)
+        return String(format: "\(simbolo ?? self.moeda) %.2f", self.preco)
     }
 }

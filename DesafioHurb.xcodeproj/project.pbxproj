@@ -31,7 +31,6 @@
 		49B0A98924B9295500884E95 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A98824B9295500884E95 /* Meta.swift */; };
 		49B0A98C24B9298C00884E95 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A98B24B9298C00884E95 /* Pagination.swift */; };
 		49B0A98E24B929B100884E95 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A98D24B929B100884E95 /* Address.swift */; };
-		49B0A99224B92A1D00884E95 /* AmenityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A99124B92A1D00884E95 /* AmenityCategory.swift */; };
 		49B0A99424B92A4300884E95 /* ResultPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A99324B92A4300884E95 /* ResultPrice.swift */; };
 		49B0A99624B92AD400884E95 /* JSONAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A99524B92AD400884E95 /* JSONAny.swift */; };
 		49B0A99824B92AEA00884E95 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0A99724B92AEA00884E95 /* Gallery.swift */; };
@@ -73,7 +72,6 @@
 		49B0A98824B9295500884E95 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		49B0A98B24B9298C00884E95 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		49B0A98D24B929B100884E95 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		49B0A99124B92A1D00884E95 /* AmenityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityCategory.swift; sourceTree = "<group>"; };
 		49B0A99324B92A4300884E95 /* ResultPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPrice.swift; sourceTree = "<group>"; };
 		49B0A99524B92AD400884E95 /* JSONAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAny.swift; sourceTree = "<group>"; };
 		49B0A99724B92AEA00884E95 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				49B0A98824B9295500884E95 /* Meta.swift */,
 				49B0A98B24B9298C00884E95 /* Pagination.swift */,
 				49B0A98D24B929B100884E95 /* Address.swift */,
-				49B0A99124B92A1D00884E95 /* AmenityCategory.swift */,
 				49B0A99324B92A4300884E95 /* ResultPrice.swift */,
 				49B0A99524B92AD400884E95 /* JSONAny.swift */,
 				49B0A99724B92AEA00884E95 /* Gallery.swift */,
@@ -296,7 +293,6 @@
 				49B0A96324B9229B00884E95 /* ViewController.swift in Sources */,
 				49B0A99624B92AD400884E95 /* JSONAny.swift in Sources */,
 				493C129824C684F1006EDC83 /* Hotel.swift in Sources */,
-				49B0A99224B92A1D00884E95 /* AmenityCategory.swift in Sources */,
 				49B0A98924B9295500884E95 /* Meta.swift in Sources */,
 				49B0A95F24B9229B00884E95 /* AppDelegate.swift in Sources */,
 				49610D3324CA1D8B00D242C6 /* Amenidade.swift in Sources */,
