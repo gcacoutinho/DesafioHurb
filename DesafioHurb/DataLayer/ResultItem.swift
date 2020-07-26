@@ -9,12 +9,10 @@
 import Foundation
 
 struct ResultItem: Codable {
-    let sku, id, smallDescription, image, name, url, resultDescription: String?
-    let isHotel: Bool?
-    let category: String?
+    let sku, id, image, name, url, resultDescription, smallDescription, category: String?
+    let isHotel, huFreeCancellation: Bool?
     let amenities: [ResultAmenity]?
     let price: ResultPrice?
-    let huFreeCancellation: Bool?
     let stars: Int?
     let gallery: [Gallery]?
     let address: Address?
@@ -23,10 +21,9 @@ struct ResultItem: Codable {
     let featuredItem: FeaturedItem?
 
     enum CodingKeys: String, CodingKey {
-        case sku, isHotel, category, smallDescription, amenities, id, price
+        case sku, isHotel, category, smallDescription, amenities, id, price,
+            image, name, url, stars, gallery, address, tags, quantityDescriptors, featuredItem
         case huFreeCancellation = "hu_free_cancellation"
-        case image, name, url
         case resultDescription = "description"
-        case stars, gallery, address, tags, quantityDescriptors, featuredItem
     }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 struct Filters: Codable {
-    let amenities, attributes, countries, cities, departureCities, duration,
-        food, people, productType, regulation, rooms, stars, states: [FilterItem]?
+    let amenities, states, attributes, countries, cities, departureCities,
+        duration, food, people, productType, regulation, rooms, stars: [FilterItem]?
     let prices: [PriceElement]?
     let priceInterval: PriceInterval?
 }

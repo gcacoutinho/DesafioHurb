@@ -9,13 +9,12 @@
 import Foundation
 
 struct Tax: Codable {
-    let name, type, currency, currencyOriginal: String?
+    let type, currency, currencyOriginal, name: String?
     let amount, amountOriginal: Double?
     
     enum CodingKeys: String, CodingKey {
-        case type, name, amount
+        case type, name, amount, currency
         case amountOriginal = "amount_original"
-        case currency
         case currencyOriginal = "currency_original"
     }
 }

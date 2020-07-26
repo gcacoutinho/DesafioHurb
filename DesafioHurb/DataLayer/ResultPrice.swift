@@ -9,9 +9,9 @@
 import Foundation
 
 struct ResultPrice: Codable {
-    let amount, currentPrice, totalPrice, amountPerDay, originalAmountPerDay, oldPrice: Double?
+    let amount, oldPrice, currentPrice, totalPrice, originalAmountPerDay, amountPerDay: Double?
     let currency, currencyOriginal, sku: String?
-    let feeExtraOriginal, gainOriginal, feeExtra, gain: Int?
+    let gain, feeExtraOriginal, gainOriginal, feeExtra: Int?
     let tariffPolicies: [JSONAny]?
     let taxes: [Tax]?
 
