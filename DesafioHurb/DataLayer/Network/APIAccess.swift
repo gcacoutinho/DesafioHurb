@@ -12,7 +12,7 @@ import Alamofire
 class HurbAPIAccess {
     private var paginaAtual: Int = 1
     private var paginaSeguinte: Int = 2
-    private let session = Session(eventMonitors: [AlamofireLogger()])
+    public var session = Session(eventMonitors: [AlamofireLogger()])
     
     func getHoteis(termo: String, pagina: Int,
                           completionHandler: @escaping (Result<[Hotel], Error>) -> Void) {

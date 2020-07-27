@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49167EB424CE276600CE4C6B /* DesafioHurbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49167EB324CE276600CE4C6B /* DesafioHurbTests.swift */; };
 		493C129824C684F1006EDC83 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C129724C684F1006EDC83 /* Hotel.swift */; };
 		4959CC4524C8C254009AC2B8 /* ImagemGaleriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959CC4424C8C254009AC2B8 /* ImagemGaleriaCell.swift */; };
 		4959CC4824C8C3A6009AC2B8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4959CC4724C8C3A6009AC2B8 /* AlamofireImage */; };
@@ -47,7 +48,20 @@
 		49F28B4B24C4949200FEC39A /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 49F28B4A24C4949200FEC39A /* SkeletonView */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49167EB624CE276600CE4C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B0A95324B9229A00884E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49B0A95A24B9229B00884E95;
+			remoteInfo = DesafioHurb;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		49167EB124CE276500CE4C6B /* DesafioHurbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioHurbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49167EB324CE276600CE4C6B /* DesafioHurbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioHurbTests.swift; sourceTree = "<group>"; };
+		49167EB524CE276600CE4C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493C129724C684F1006EDC83 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		4959CC4424C8C254009AC2B8 /* ImagemGaleriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemGaleriaCell.swift; sourceTree = "<group>"; };
 		49610D3224CA1D8B00D242C6 /* Amenidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amenidade.swift; sourceTree = "<group>"; };
@@ -88,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49167EAE24CE276500CE4C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B0A95824B9229B00884E95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49167EB224CE276500CE4C6B /* DesafioHurbTests */ = {
+			isa = PBXGroup;
+			children = (
+				49167EB324CE276600CE4C6B /* DesafioHurbTests.swift */,
+				49167EB524CE276600CE4C6B /* Info.plist */,
+			);
+			path = DesafioHurbTests;
+			sourceTree = "<group>";
+		};
 		493C129624C684B2006EDC83 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +163,7 @@
 			children = (
 				49B0A97624B9237600884E95 /* pull-request.txt */,
 				49B0A95D24B9229B00884E95 /* DesafioHurb */,
+				49167EB224CE276500CE4C6B /* DesafioHurbTests */,
 				49B0A95C24B9229B00884E95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				49B0A95B24B9229B00884E95 /* DesafioHurb.app */,
+				49167EB124CE276500CE4C6B /* DesafioHurbTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +235,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49167EB024CE276500CE4C6B /* DesafioHurbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49167EBA24CE276600CE4C6B /* Build configuration list for PBXNativeTarget "DesafioHurbTests" */;
+			buildPhases = (
+				49167EAD24CE276500CE4C6B /* Sources */,
+				49167EAE24CE276500CE4C6B /* Frameworks */,
+				49167EAF24CE276500CE4C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49167EB724CE276600CE4C6B /* PBXTargetDependency */,
+			);
+			name = DesafioHurbTests;
+			productName = DesafioHurbTests;
+			productReference = 49167EB124CE276500CE4C6B /* DesafioHurbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49B0A95A24B9229B00884E95 /* DesafioHurb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B0A96F24B922A200884E95 /* Build configuration list for PBXNativeTarget "DesafioHurb" */;
@@ -231,10 +281,14 @@
 		49B0A95324B9229A00884E95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Gabriel Coutinho";
 				TargetAttributes = {
+					49167EB024CE276500CE4C6B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 49B0A95A24B9229B00884E95;
+					};
 					49B0A95A24B9229B00884E95 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -259,11 +313,19 @@
 			projectRoot = "";
 			targets = (
 				49B0A95A24B9229B00884E95 /* DesafioHurb */,
+				49167EB024CE276500CE4C6B /* DesafioHurbTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49167EAF24CE276500CE4C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B0A95924B9229B00884E95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +340,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49167EAD24CE276500CE4C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49167EB424CE276600CE4C6B /* DesafioHurbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B0A95724B9229B00884E95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +388,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		49167EB724CE276600CE4C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49B0A95A24B9229B00884E95 /* DesafioHurb */;
+			targetProxy = 49167EB624CE276600CE4C6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		49B0A96424B9229B00884E95 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -338,6 +416,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		49167EB824CE276600CE4C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5VZ2D4W9H;
+				INFOPLIST_FILE = DesafioHurbTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coutinho.DesafioHurbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioHurb.app/DesafioHurb";
+			};
+			name = Debug;
+		};
+		49167EB924CE276600CE4C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5VZ2D4W9H;
+				INFOPLIST_FILE = DesafioHurbTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.coutinho.DesafioHurbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioHurb.app/DesafioHurb";
+			};
+			name = Release;
+		};
 		49B0A96D24B922A200884E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -491,6 +611,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		49167EBA24CE276600CE4C6B /* Build configuration list for PBXNativeTarget "DesafioHurbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49167EB824CE276600CE4C6B /* Debug */,
+				49167EB924CE276600CE4C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49B0A95624B9229A00884E95 /* Build configuration list for PBXProject "DesafioHurb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
