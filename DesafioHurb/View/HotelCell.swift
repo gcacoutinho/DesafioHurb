@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AccessibilityActionDelegate {
+    func didActivateCell(data: Any?)
+}
+
 class HotelCell: UITableViewCell {
     
     static let identifier = "HotelCell"
@@ -16,7 +20,16 @@ class HotelCell: UITableViewCell {
     @IBOutlet weak var localizacao: UILabel!
     @IBOutlet weak var preco: UILabel!
     @IBOutlet private weak var galeria: UICollectionView!
-
+    
+    var accessibilityDelegate: AccessibilityActionDelegate?
+    
+    override func accessibilityActivate() -> Bool {
+        if ((self.accessibilityDelegate?.didActivateCell(data: self)) != nil) {
+            return true
+        }
+        return false
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
     

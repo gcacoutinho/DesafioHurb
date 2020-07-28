@@ -74,6 +74,9 @@ extension ViewController: UITableViewDataSource {
         hotelCell.tituloLabel?.text = hotel.nome
         hotelCell.preco?.text = hotel.getPrecoTexto()
         hotelCell.localizacao?.text = hotel.getLocalizacao()
+        hotelCell.accessibilityHint = "Abre mais informações"
+        
+        hotelCell.accessibilityDelegate = self
 
         hotelCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
 
@@ -106,5 +109,12 @@ extension ViewController: UITableViewDelegate {
                 }
             }
         }
+    }
+}
+
+extension ViewController: AccessibilityActionDelegate {
+    func didActivateCell(data: Any?) {
+        let alert = UIAlertController(title: "PIRU", message: "", preferredStyle: .alert)
+        self.present(alert, animated: true)
     }
 }

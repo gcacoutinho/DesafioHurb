@@ -63,6 +63,7 @@
 		49167EB324CE276600CE4C6B /* DesafioHurbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioHurbTests.swift; sourceTree = "<group>"; };
 		49167EB524CE276600CE4C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493C129724C684F1006EDC83 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		49489B1024CFA2F900B860F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4959CC4424C8C254009AC2B8 /* ImagemGaleriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemGaleriaCell.swift; sourceTree = "<group>"; };
 		49610D3224CA1D8B00D242C6 /* Amenidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amenidade.swift; sourceTree = "<group>"; };
 		496E846A24C8C035003599C1 /* ViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UICollectionView.swift"; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 		49B0A95224B9229A00884E95 = {
 			isa = PBXGroup;
 			children = (
+				49489B1024CFA2F900B860F7 /* README.md */,
 				49B0A97624B9237600884E95 /* pull-request.txt */,
 				49B0A95D24B9229B00884E95 /* DesafioHurb */,
 				49167EB224CE276500CE4C6B /* DesafioHurbTests */,

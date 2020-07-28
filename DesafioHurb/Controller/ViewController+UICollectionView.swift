@@ -26,6 +26,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
                 switch response.result {
                 case .success(let image):
                     itemGaleria.imagem.image = image
+                    if let descricao = galeria[indexPath.row].descricao, !descricao.isEmpty {
+                        itemGaleria.accessibilityLabel = descricao
+                    } else {
+                        itemGaleria.accessibilityLabel = "Essa imagem não contém uma descrição"
+                    }
                 case.failure(let error):
                     debugPrint(error)
                 }

@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum TipoOferta: String {
+    case pacote = "Pacote"
+    case hotel = "Hotel"
+}
+
 class Hotel {
     let nome: String
     let descricao: String
@@ -20,6 +25,7 @@ class Hotel {
     let estrelas: Int?
     let galeria: [ImagemGaleria]
     let amenidades: [Amenidade]
+    let tipo: TipoOferta
     
     init (hotel: ResultItem) {
         self.nome = hotel.name ?? ""
@@ -40,6 +46,7 @@ class Hotel {
             }
             return nil
         }) ?? []
+        self.tipo = (hotel.isHotel ?? false) ? .hotel : .pacote
     }
     
     func getLocalizacao() -> String {
